@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>SimpleSRP</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>res/fonts/Kottke Silkscreen License.txt</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Downloads/New-Beginner-Java-Game-Programming-Src-master/New-Beginner-Java-Game-Programming-Src-master/Episode 34/TileGame/res/fonts/Kottke Silkscreen License.txt</location>
+		</link>
+		<link>
+			<name>res/fonts/slkscr.ttf</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Downloads/New-Beginner-Java-Game-Programming-Src-master/New-Beginner-Java-Game-Programming-Src-master/Episode 34/TileGame/res/fonts/slkscr.ttf</location>
+		</link>
+		<link>
+			<name>res/textures/Monster-zombie.png</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Downloads/Monster-zombie.png</location>
+		</link>
+		<link>
+			<name>res/textures/PathAndObjects.png</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Documents/gameoop/PathAndObjects.png</location>
+		</link>
+		<link>
+			<name>res/textures/floortileset.png</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Documents/gameoop/floortileset.png</location>
+		</link>
+		<link>
+			<name>res/textures/inventoryScreen.png</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Downloads/New-Beginner-Java-Game-Programming-Src-master/New-Beginner-Java-Game-Programming-Src-master/Episode 34/TileGame/res/textures/inventoryScreen.png</location>
+		</link>
+		<link>
+			<name>res/textures/sheet.png</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Downloads/New-Beginner-Java-Game-Programming-Src-master/New-Beginner-Java-Game-Programming-Src-master/Episode 34/TileGame/res/textures/sheet.png</location>
+		</link>
+		<link>
+			<name>res/worlds/world1.txt</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Documents/gameoop/world1.txt</location>
+		</link>
+		<link>
+			<name>res/worlds/world2.txt</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Documents/gameoop/world2.txt</location>
+		</link>
+		<link>
+			<name>res/worlds/world3.txt</name>
+			<type>1</type>
+			<location>C:/Users/dinhsoict/Documents/gameoop/world3.txt</location>
+		</link>
+	</linkedResources>
+</projectDescription>
