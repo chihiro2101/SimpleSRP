@@ -23,7 +23,8 @@ import tilegame.states.State;
 public class Game implements Runnable {
     
     private Display display;
-    private int width, height;
+    public static int width;
+	public static int height;
     private String title;
     
     private boolean running = false;

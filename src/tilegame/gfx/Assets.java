@@ -13,7 +13,7 @@ import java.awt.image.BufferedImage;
  */
 public class Assets {
     private static final int width = 32, height = 32;
-    public static BufferedImage dirt, grass, stone, tree, rock, fruit, water, stonegrass, bullet;
+    public static BufferedImage inventory, dirt, grass, stone, tree, rock, fruit, water, stonegrass, bullet, buttons, tuto, tutov2, buttonv2;
     public static BufferedImage wood;
     public static BufferedImage[] player_down, player_up, player_left, player_right;
     public static BufferedImage[] zombie_down, zombie_up, zombie_left, zombie_right;
@@ -26,6 +26,12 @@ public class Assets {
         SpriteSheet floor = new SpriteSheet(ImageLoader.loadImage("/textures/floortileset.png"));
         SpriteSheet zombie = new SpriteSheet(ImageLoader.loadImage("/textures/Monster-zombie.png"));
         SpriteSheet fruits = new SpriteSheet(ImageLoader.loadImage("/textures/PathAndObjects.png"));
+        
+        buttons = ImageLoader.loadImage("/textures/buttonsheet.png");
+		buttonv2 = ImageLoader.loadImage("/textures/buttonv2.png");
+		tutov2 = ImageLoader.loadImage("/textures/tutov2.png");
+		tuto = ImageLoader.loadImage("/textures/tutorial.png");
+		inventory = ImageLoader.loadImage("/textures/inventoryScreen.png");
         
         
         wood = sheet.crop(width, height, width, height);
@@ -64,10 +70,10 @@ public class Assets {
 		zombie_left[1] = sheet.crop(width * 7, height * 3, width, height);
 		
 		
-		zombie1_down = new BufferedImage[2];
-		zombie1_up = new BufferedImage[2];
-		zombie1_left = new BufferedImage[2];
-		zombie1_right = new BufferedImage[2];
+		zombie1_down = new BufferedImage[7];
+		zombie1_up = new BufferedImage[7];
+		zombie1_left = new BufferedImage[7];
+		zombie1_right = new BufferedImage[7];
 		
 		zombie1_down[0] = zombie.crop(0, 0, width * 2, height * 2);
 		zombie1_down[1] = zombie.crop(width * 2, 0, width * 2, height * 2);
@@ -102,10 +108,10 @@ public class Assets {
 		zombie1_up[5] = zombie.crop(width * 10, height * 6, width * 2, height * 2);
 		zombie1_up[6] = zombie.crop(width * 12, height * 6, width * 2, height * 2);
                 
-		monster_down = new BufferedImage[2];
-		monster_up = new BufferedImage[2];
-		monster_left = new BufferedImage[2];
-		monster_right = new BufferedImage[2];
+		monster_down = new BufferedImage[4];
+		monster_up = new BufferedImage[4];
+		monster_left = new BufferedImage[4];
+		monster_right = new BufferedImage[4];
 		
 		monster_down[0] = zombie.crop(0, height * 8, width * 2, height * 2);
 		monster_down[1] = zombie.crop(width * 2, height * 8, width * 2, height * 2);

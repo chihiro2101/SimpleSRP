@@ -6,6 +6,8 @@
 package tilegame.states;
 
 import java.awt.Graphics;
+import java.io.IOException;
+
 import tilegame.Handler;
 
 /**
@@ -16,9 +18,13 @@ public abstract class State {
     
     private static State currentState = null;
     
-    public static void setState(State state) {
-        currentState = state;
-    }
+	public static void setState(State state)
+	{
+		
+		currentState = state;
+		
+	}
+
     
     public static State getState() {
         return currentState;

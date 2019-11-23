@@ -17,6 +17,7 @@ public class Display {
     private Canvas canvas;
     
     
+    
     private String title;
     private int width, height;
     

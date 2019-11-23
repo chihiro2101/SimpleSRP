@@ -14,7 +14,7 @@ import java.awt.event.KeyListener;
 public class KeyManager implements KeyListener {
 
     private boolean[] keys, justPressed, cantPress;
-    public boolean up, down, left, right;
+    public boolean up, down, left, right,  esc, p, m, i, j, z, s, enter;
     public boolean space;
     
     public KeyManager(){
@@ -42,6 +42,19 @@ public class KeyManager implements KeyListener {
         right = keys[KeyEvent.VK_RIGHT];
                 
         space = keys[KeyEvent.VK_SPACE];
+        enter = keys[KeyEvent.VK_ENTER];
+        esc = keys[KeyEvent.VK_ESCAPE];
+        
+		
+		p = keys[KeyEvent.VK_P];
+		m = keys[KeyEvent.VK_M];
+		
+		// Inventory keys
+		i = keys[KeyEvent.VK_I];
+		j = keys[KeyEvent.VK_J];
+		
+		z = keys[KeyEvent.VK_Z];
+		s = keys[KeyEvent.VK_S];
         
     }
     @Override
@@ -58,7 +71,9 @@ public class KeyManager implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        keys[e.getKeyCode()] = false;
+		if(e.getKeyCode() < 0 || e.getKeyCode() >= keys.length) // To prevent errors
+			return;
+		keys[e.getKeyCode()] = false;
     }
     
     public boolean keyJustPressed(int keyCode) {
