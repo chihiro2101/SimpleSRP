@@ -13,25 +13,31 @@ import java.awt.image.BufferedImage;
  */
 public class Assets {
     private static final int width = 32, height = 32;
-    public static BufferedImage inventory, dirt, grass, stone, tree, rock, fruit, water, stonegrass, bullet, buttons, tuto, tutov2, buttonv2;
+    public static BufferedImage how_to_play_button, inventory, dirt, grass, stone, tree, rock, fruit, water, stonegrass, bullet, buttons, tuto, tutov2, buttonv2;
     public static BufferedImage wood;
     public static BufferedImage[] player_down, player_up, player_left, player_right;
     public static BufferedImage[] zombie_down, zombie_up, zombie_left, zombie_right;
     public static BufferedImage[] zombie1_down, zombie1_up, zombie1_left, zombie1_right;
     public static BufferedImage[] monster_down, monster_up, monster_left, monster_right;
     public static BufferedImage[] btn_start;
+    public static BufferedImage[] scores;
+    
     
     public static void init() {
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheet.png"));
         SpriteSheet floor = new SpriteSheet(ImageLoader.loadImage("/textures/floortileset.png"));
         SpriteSheet zombie = new SpriteSheet(ImageLoader.loadImage("/textures/Monster-zombie.png"));
         SpriteSheet fruits = new SpriteSheet(ImageLoader.loadImage("/textures/PathAndObjects.png"));
+        SpriteSheet number = new SpriteSheet(ImageLoader.loadImage("/textures/scores448x192.png"));
+        
+        
         
         buttons = ImageLoader.loadImage("/textures/buttonsheet.png");
 		buttonv2 = ImageLoader.loadImage("/textures/buttonv2.png");
 		tutov2 = ImageLoader.loadImage("/textures/tutov2.png");
 		tuto = ImageLoader.loadImage("/textures/tutorial.png");
 		inventory = ImageLoader.loadImage("/textures/inventoryScreen.png");
+		how_to_play_button = ImageLoader.loadImage("/textures/How-to-Play-button229x96.png");
         
         
         wood = sheet.crop(width, height, width, height);
@@ -129,6 +135,20 @@ public class Assets {
 		monster_left[1] = zombie.crop(width * 4, height * 10, width * 2, height * 2);
 		monster_left[2] = zombie.crop(width * 6, height * 10, width * 2, height * 2);
 		monster_left[3] = zombie.crop(width * 8, height * 10, width * 2, height * 2);
+		
+		
+        scores = new BufferedImage[11];
+        scores[0] = number.crop(width * 4, height * 3, width * 2, height * 3);
+        scores[1] = number.crop(0, 0, width * 2, height * 3);
+        scores[2] = number.crop(width * 2, 0, width * 2, height * 3);
+        scores[3] = number.crop(width * 4, 0, width * 2, height * 3);
+        scores[4] = number.crop(width * 6, 0, width * 2, height * 3);
+        scores[5] = number.crop(width * 8, 0, width * 2, height * 3);
+        scores[6] = number.crop(width * 10, 0, width * 2, height * 3);
+        scores[7] = number.crop(width * 12, 0, width * 2, height * 3);
+        scores[8] = number.crop(width * 0, height * 3, width * 2, height * 3);
+        scores[9] = number.crop(width * 2, height * 3, width * 2, height * 3);
+
 		
         
 		
